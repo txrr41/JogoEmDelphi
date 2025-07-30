@@ -203,28 +203,4 @@ Tboss }
 { Tplayer }
 
 
-{ Tplayer }
-
-function Tplayer.getDano: integer;
-begin
-   result := Self.dano;
-end;
-
-procedure Tplayer.setDano(ADano: Integer);
-begin
-    self.dano := ADano;
-end;
-
-{ Tboss }
-
-function Tboss.getDano: integer;
-begin
-    result := Self.dano;
-end;
-
-procedure Tboss.setDano(ADano: Integer);
-begin
-   self.dano := ADano;
-end;
-
 end.

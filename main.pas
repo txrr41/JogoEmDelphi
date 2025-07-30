@@ -28,13 +28,17 @@ uses uclasse;
 procedure TForm3.Button1Click(Sender: TObject);
 var personagem:Tpersonagem;
 player : tplayer;
+boss: tboss;
 
 begin
-  personagem := Tpersonagem.Create(12, 12);
-  personagem.Nome := 'abc';
+  personagem := Tpersonagem.Create(100, 1, 10, 100, '', '', True);
 
-  player := tplayer.Create(15, 15);
-  player.Nickname := 'adasdas'
+
+
+  player := tplayer.Create(100, 1, 10, 100, '', '', True);
+  player.Nickname := 'adasdas';
+
+   boss := TBoss.Create(1000, 1, 100, 1000, '', '', True);
 end;
 
 end.
